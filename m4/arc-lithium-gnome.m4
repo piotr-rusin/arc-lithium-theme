@@ -1,6 +1,6 @@
-# ARC_GNOME()
+# ARC_LITHIUM_GNOME()
 # ---------------
-AC_DEFUN([ARC_GNOME], [
+AC_DEFUN([ARC_LITHIUM_GNOME], [
     GNOMEDIR="$srcdir/common/gtk-3.0"
     PKG_PROG_PKG_CONFIG()
     AC_ARG_WITH(

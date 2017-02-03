@@ -1,6 +1,6 @@
-# ARC_ENABLE(VARIABLE, FEATURE, HELP-NAME, DISABLE/ENABLE)
+# ARC_LITHIUM_ENABLE(VARIABLE, FEATURE, HELP-NAME, DISABLE/ENABLE)
 # -----------------------------------------------------------
-AC_DEFUN([ARC_ENABLE], [
+AC_DEFUN([ARC_LITHIUM_ENABLE], [
     AC_ARG_ENABLE(
         [$2],
         [AS_HELP_STRING(
