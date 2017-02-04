@@ -3985,7 +3985,7 @@ GtkListBox .h4 {
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(53, 57, 69, 0.95); }
+  box-shadow: inset 0 1px rgba(231, 233, 236, 0.95); }
 
 #buttonbox_frame button {
   color: #BAC3CF;
@@ -4051,14 +4051,14 @@ GtkListBox .h4 {
   font-weight: bold; }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(53, 57, 69, 0.95), rgba(53, 57, 69, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(231, 233, 236, 0.95), rgba(231, 233, 236, 0.95)); }
   .nautilus-window paned > separator:dir(ltr) {
     margin-left: -1px; }
   .nautilus-window paned > separator:dir(rtl) {
     margin-right: -1px; }
 
 filechooser paned > separator {
-  background-image: linear-gradient(to bottom, rgba(53, 57, 69, 0.95), rgba(53, 57, 69, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(231, 233, 236, 0.95), rgba(231, 233, 236, 0.95)); }
 
 filechooser.csd.background, filechooser placessidebar list,
 .nautilus-window.csd.background,
@@ -4067,23 +4067,23 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
-    color: #BAC3CF; }
+    color: #5c616c; }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
-      color: rgba(186, 195, 207, 0.6); }
+      color: rgba(92, 97, 108, 0.6); }
     filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
     .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
-      background-color: rgba(186, 195, 207, 0.15); }
+      background-color: rgba(92, 97, 108, 0.15); }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image {
-      color: rgba(186, 195, 207, 0.4); }
+      color: rgba(92, 97, 108, 0.4); }
     filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
@@ -4092,7 +4092,7 @@ filechooser placessidebar.sidebar,
       color: inherit; }
     filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
     .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
-      color: #BAC3CF; }
+      color: #5c616c; }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover {
         color: #BAC3CF;
@@ -4131,21 +4131,21 @@ filechooser placessidebar.sidebar,
 
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
-  background-color: #353945; }
+  background-color: #f5f6f7; }
 
 .nemo-window .sidebar {
-  color: #BAC3CF;
-  background-color: rgba(53, 57, 69, 0.95); }
+  color: #5c616c;
+  background-color: rgba(245, 246, 247, 0.95); }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
-    color: #BAC3CF; }
+    color: #5c616c; }
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #5294e2;
       color: #ffffff; }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-      color: rgba(123, 129, 141, 0.975); }
+      color: rgba(165, 168, 174, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-        color: #BAC3CF; }
+        color: #5c616c; }
   .nemo-window .sidebar separator {
     background-color: transparent; }
 
@@ -4153,44 +4153,44 @@ filechooser.maximized placessidebar.sidebar,
 .caja-side-pane > notebook > stack > widget > box,
 .caja-side-pane text,
 .caja-side-pane treeview {
-  color: #BAC3CF;
-  caret-color: #BAC3CF;
-  background-color: #353945; }
+  color: #5c616c;
+  caret-color: #5c616c;
+  background-color: #f5f6f7; }
 
 .caja-side-pane > box button:not(:active):not(:checked) {
-  color: #BAC3CF; }
+  color: #5c616c; }
 
 .caja-side-pane .frame {
-  border-color: #2a2d37; }
+  border-color: #e7e9ec; }
 
 .caja-side-pane junction {
-  background-color: rgba(42, 45, 55, 0.95); }
+  background-color: rgba(231, 233, 236, 0.95); }
 
 filechooser actionbar {
-  color: #BAC3CF;
-  background-color: rgba(53, 57, 69, 0.95);
-  border-color: rgba(37, 40, 49, 0.95); }
+  color: #5c616c;
+  background-color: rgba(245, 246, 247, 0.95);
+  border-color: rgba(225, 228, 231, 0.95); }
   filechooser actionbar label, filechooser actionbar combobox {
-    color: #BAC3CF; }
+    color: #5c616c; }
 
 .gedit-bottom-panel-paned {
   background-color: #ffffff; }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(53, 57, 69, 0.95), rgba(53, 57, 69, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(231, 233, 236, 0.95), rgba(231, 233, 236, 0.95)); }
 
 .gedit-bottom-panel-paned > separator {
   background-image: linear-gradient(to bottom, #dcdfe3, #dcdfe3); }
 
 .gedit-document-panel {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   .maximized .gedit-document-panel {
-    background-color: #353945; }
+    background-color: #f5f6f7; }
   .gedit-document-panel row {
-    color: #BAC3CF;
-    background-color: rgba(186, 195, 207, 0); }
+    color: #5c616c;
+    background-color: rgba(92, 97, 108, 0); }
     .gedit-document-panel row:hover {
-      background-color: rgba(186, 195, 207, 0.15); }
+      background-color: rgba(92, 97, 108, 0.15); }
     .gedit-document-panel row:active {
       color: #ffffff;
       background-color: #5294e2; }
@@ -4200,7 +4200,7 @@ filechooser actionbar {
       color: #ffffff;
       background-color: #5294e2; }
     .gedit-document-panel row:hover:not(:selected) button:active {
-      color: #BAC3CF; }
+      color: #5c616c; }
 
 filechooser actionbar button {
   color: #BAC3CF;
@@ -4235,17 +4235,17 @@ filechooser actionbar entry {
 
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
-  border-color: rgba(42, 45, 55, 0.95); }
+  border-color: rgba(231, 233, 236, 0.95); }
   filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
   .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: #e7eaee;
+    background-color: #818794;
     border: 1px solid rgba(0, 0, 0, 0.3); }
   filechooser placessidebar.sidebar scrollbar slider,
   .nautilus-window placessidebar.sidebar scrollbar slider, .nemo-window .sidebar scrollbar slider, .caja-side-pane scrollbar slider {
-    background-color: rgba(231, 234, 238, 0.7); }
+    background-color: rgba(129, 135, 148, 0.7); }
     filechooser placessidebar.sidebar scrollbar slider:hover,
     .nautilus-window placessidebar.sidebar scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover, .caja-side-pane scrollbar slider:hover {
-      background-color: #f6f7f9; }
+      background-color: #8f949f; }
     filechooser placessidebar.sidebar scrollbar slider:hover:active,
     .nautilus-window placessidebar.sidebar scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active, .caja-side-pane scrollbar slider:hover:active {
       background-color: #5294e2; }
@@ -4254,7 +4254,7 @@ filechooser placessidebar.sidebar scrollbar,
       background-color: transparent; }
   filechooser placessidebar.sidebar scrollbar trough,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
-    background-color: rgba(42, 45, 55, 0.95); }
+    background-color: rgba(231, 233, 236, 0.95); }
 
 @define-color theme_fg_color #5c616c;
 @define-color theme_text_color #5c616c;

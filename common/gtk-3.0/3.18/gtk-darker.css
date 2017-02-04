@@ -3644,7 +3644,7 @@ GtkListBox .h4 {
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(53, 57, 69, 0.95); }
+  box-shadow: inset 0 1px rgba(231, 233, 236, 0.95); }
 
 #buttonbox_frame .button {
   color: #BAC3CF;
@@ -3736,24 +3736,24 @@ NautilusWindow .list.sidebar {
 
 GtkFileChooserDialog GtkPlacesSidebar.sidebar,
 NautilusWindow GtkPlacesSidebar.sidebar {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable {
     border: 1px solid #5294e2; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row {
-    background-color: rgba(75, 81, 98, 0.95); }
+    background-color: rgba(255, 255, 255, 0.95); }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable,
   NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable {
     border: none;
-    color: #BAC3CF; }
+    color: #5c616c; }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon {
-      color: rgba(186, 195, 207, 0.6); }
+      color: rgba(92, 97, 108, 0.6); }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:hover,
     NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup {
-      background-color: rgba(186, 195, 207, 0.15); }
+      background-color: rgba(92, 97, 108, 0.15); }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected .sidebar-icon, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover .sidebar-icon, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected .sidebar-icon, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover .sidebar-icon, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active .sidebar-icon,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected .sidebar-icon,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover .sidebar-icon,
@@ -3763,7 +3763,7 @@ NautilusWindow GtkPlacesSidebar.sidebar {
       color: inherit; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button {
-    color: #BAC3CF; }
+    color: #5c616c; }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button:hover,
     NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button:hover {
       color: #BAC3CF;
@@ -3787,7 +3787,7 @@ NautilusWindow GtkPlacesSidebar.sidebar {
 
 GtkFileChooserDialog.maximized GtkPlacesSidebar.sidebar,
 NautilusWindow.maximized GtkPlacesSidebar.sidebar {
-  background-color: #353945; }
+  background-color: #f5f6f7; }
 
 NemoWindow.csd.background,
 NemoWindow .source-list, NemoWindow .source-list.view, NemoWindow .source-list.view:prelight,
@@ -3800,20 +3800,20 @@ MarlinViewWindow .source-list.view:prelight {
 NemoWindow .sidebar, NemoWindow .source-list.sidebar.view,
 MarlinViewWindow .sidebar,
 MarlinViewWindow .source-list.sidebar.view {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   NemoWindow .sidebar .view, NemoWindow .sidebar row, NemoWindow .source-list.sidebar.view .view, NemoWindow .source-list.sidebar.view row,
   MarlinViewWindow .sidebar .view,
   MarlinViewWindow .sidebar row,
   MarlinViewWindow .source-list.sidebar.view .view,
   MarlinViewWindow .source-list.sidebar.view row {
     background-color: transparent;
-    color: #BAC3CF; }
+    color: #5c616c; }
     NemoWindow .sidebar .view.image, NemoWindow .sidebar row.image, NemoWindow .source-list.sidebar.view .view.image, NemoWindow .source-list.sidebar.view row.image,
     MarlinViewWindow .sidebar .view.image,
     MarlinViewWindow .sidebar row.image,
     MarlinViewWindow .source-list.sidebar.view .view.image,
     MarlinViewWindow .source-list.sidebar.view row.image {
-      color: rgba(186, 195, 207, 0.7); }
+      color: rgba(92, 97, 108, 0.7); }
     NemoWindow .sidebar .view.cell:selected, NemoWindow .sidebar row.cell:selected, NemoWindow .source-list.sidebar.view .view.cell:selected, NemoWindow .source-list.sidebar.view row.cell:selected,
     MarlinViewWindow .sidebar .view.cell:selected,
     MarlinViewWindow .sidebar row.cell:selected,
@@ -3824,7 +3824,7 @@ MarlinViewWindow .source-list.sidebar.view {
   NemoWindow .sidebar.frame, NemoWindow .source-list.sidebar.view.frame,
   MarlinViewWindow .sidebar.frame,
   MarlinViewWindow .source-list.sidebar.view.frame {
-    color: #BAC3CF; }
+    color: #5c616c; }
   NemoWindow .sidebar .separator, NemoWindow .sidebar .view.separator, NemoWindow .source-list.sidebar.view .separator,
   MarlinViewWindow .sidebar .separator,
   MarlinViewWindow .sidebar .sidebar.separator,
@@ -3834,11 +3834,11 @@ MarlinViewWindow .source-list.sidebar.view {
 
 NemoWindow.maximized .sidebar,
 MarlinViewWindow.maximized .sidebar {
-  background-color: #353945; }
+  background-color: #f5f6f7; }
 
 NemoWindow.background > GtkGrid > GtkPaned > .pane-separator,
 MarlinViewWindow.background > GtkBox > GtkPaned > .pane-separator {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(231, 233, 236, 0.95); }
 
 NautilusWindow NautilusWindowSlot {
   background-color: #ffffff; }
@@ -3847,7 +3847,7 @@ NautilusDesktopWindow NautilusWindowSlot {
   background-color: transparent; }
 
 GtkFileChooserDialog.background.csd, GtkFileChooserDialog.background {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
 
 GtkFileChooserDialog GtkPlacesSidebar.sidebar {
   background-color: transparent; }
@@ -3859,17 +3859,17 @@ GtkFileChooserDialog .dialog-action-box {
   background-color: #F5F6F7; }
 
 GtkFileChooserDialog .dialog-vbox > .frame {
-  color: #BAC3CF;
+  color: #5c616c;
   border-color: transparent; }
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame {
   background-color: transparent;
-  border-color: rgba(37, 40, 49, 0.95); }
+  border-color: rgba(225, 228, 231, 0.95); }
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkLabel, GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkComboBox,
 GtkFileChooserDialog .dialog-vbox > .frame GtkLabel,
 GtkFileChooserDialog .dialog-vbox > .frame GtkComboBox {
-  color: #BAC3CF; }
+  color: #5c616c; }
 
 FeedReaderreaderUI.background.csd > .titlebar .pane-separator,
 FeedReaderreaderUI.background.csd.maximized > .titlebar .pane-separator,
@@ -3903,7 +3903,7 @@ GeditWindow.background.csd {
   background-color: transparent; }
 
 GeditWindow.background .gedit-side-panel-paned .pane-separator {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(231, 233, 236, 0.95); }
 
 GeditWindow.background .gedit-bottom-panel-paned .pane-separator {
   background-color: #dcdfe3; }
@@ -3912,19 +3912,19 @@ GeditWindow.background .gedit-bottom-panel-paned .pane-separator {
   background-color: #ffffff; }
 
 .gedit-document-panel {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   .maximized .gedit-document-panel {
-    background-color: #353945; }
+    background-color: #f5f6f7; }
   .gedit-document-panel .list-row {
-    color: #BAC3CF; }
+    color: #5c616c; }
   .gedit-document-panel .list-row {
-    background-color: rgba(186, 195, 207, 0);
-    border: solid rgba(186, 195, 207, 0);
+    background-color: rgba(92, 97, 108, 0);
+    border: solid rgba(92, 97, 108, 0);
     border-width: 3px 2px 3px 2px; }
   .gedit-document-panel .list-row:hover {
-    border: solid rgba(186, 195, 207, 0.15);
+    border: solid rgba(92, 97, 108, 0.15);
     border-width: 3px 2px 3px 2px;
-    background-color: rgba(186, 195, 207, 0.15); }
+    background-color: rgba(92, 97, 108, 0.15); }
   .gedit-document-panel .list-row:active {
     color: #ffffff;
     background-color: #5294e2;
@@ -3938,23 +3938,23 @@ GeditWindow.background .gedit-bottom-panel-paned .pane-separator {
     border: solid #5294e2;
     border-width: 3px 2px 3px 2px; }
   .gedit-document-panel .prelight-row .button:active {
-    color: #BAC3CF; }
+    color: #5c616c; }
 
 GeditFileBrowserWidget {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(245, 246, 247, 0.95); }
   .maximized GeditFileBrowserWidget {
-    background-color: #353945; }
+    background-color: #f5f6f7; }
   GeditFileBrowserWidget .horizontal {
     background-color: transparent;
-    border-color: rgba(37, 40, 49, 0.95); }
+    border-color: rgba(225, 228, 231, 0.95); }
     GeditFileBrowserWidget .horizontal GtkComboBox {
-      color: #BAC3CF; }
+      color: #5c616c; }
 
 GeditWindow.background.csd GeditFileBrowserView.view {
   background-color: transparent;
-  color: #BAC3CF; }
+  color: #5c616c; }
   GeditWindow.background.csd GeditFileBrowserView.view.expander {
-    color: #BAC3CF; }
+    color: #5c616c; }
     GeditWindow.background.csd GeditFileBrowserView.view.expander:hover {
       color: #5294e2; }
 
@@ -4006,7 +4006,7 @@ GtkFileChooserDialog .dialog-vbox > .frame .entry {
 GtkFileChooserDialog GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider,
 NautilusWindow GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, NemoWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider,
 MarlinViewWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, GeditFileBrowserWidget .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider {
-  background-color: #e7eaee;
+  background-color: #818794;
   border: 1px solid rgba(0, 0, 0, 0.3); }
 
 GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .trough,
@@ -4020,11 +4020,11 @@ GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider,
 NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider, NemoWindow .sidebar .scrollbar .slider, NemoWindow .source-list.sidebar.view .scrollbar .slider,
 MarlinViewWindow .sidebar .scrollbar .slider,
 MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserWidget .scrollbar .slider {
-  background-color: rgba(231, 234, 238, 0.7); }
+  background-color: rgba(129, 135, 148, 0.7); }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:hover,
   NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:hover, NemoWindow .sidebar .scrollbar .slider:hover,
   MarlinViewWindow .sidebar .scrollbar .slider:hover, GeditFileBrowserWidget .scrollbar .slider:hover {
-    background-color: #f6f7f9; }
+    background-color: #8f949f; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active,
   NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active, NemoWindow .sidebar .scrollbar .slider:prelight:active,
   MarlinViewWindow .sidebar .scrollbar .slider:prelight:active, GeditFileBrowserWidget .scrollbar .slider:prelight:active {

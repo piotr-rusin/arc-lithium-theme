@@ -3,7 +3,7 @@
 //.nemo-window,
 .nautilus-window {
   paned > separator {
-    background-image: _solid($dark_sidebar_border);
+    background-image: _solid($sidebar_border);
 
     @if $variant=='light' {
       &:dir(ltr) { margin-left: -1px; }
@@ -12,7 +12,7 @@
   }
 }
 
-filechooser paned > separator { background-image: _solid($dark_sidebar_border); }
+filechooser paned > separator { background-image: _solid($sidebar_border); }
 
 // Dark transparent sidebars
 filechooser,
@@ -22,19 +22,19 @@ filechooser,
 
   placessidebar.sidebar {
 
-    background-color: $dark_sidebar_bg;
+    background-color: $sidebar_bg;
 
     row.sidebar-row {
       border: none;
-      color: $dark_sidebar_fg;
+      color: $sidebar_fg;
 
-      .sidebar-icon { color: transparentize($dark_sidebar_fg, 0.4); }
+      .sidebar-icon { color: transparentize($sidebar_fg, 0.4); }
 
       &.has-open-popup,
-      &:hover { background-color: transparentize($dark_sidebar_fg, 0.85); }
+      &:hover { background-color: transparentize($sidebar_fg, 0.85); }
 
       &:disabled {
-        &, label, image { color: transparentize($dark_sidebar_fg, 0.6); }
+        &, label, image { color: transparentize($sidebar_fg, 0.6); }
       }
 
       &:selected.has-open-popup,
@@ -45,7 +45,7 @@ filechooser,
       }
 
       &:not(:selected) button.sidebar-button {
-        color: $dark_sidebar_fg;
+        color: $sidebar_fg;
 
         &:hover { @include button(osd-hover); }
         &:active { @include button(active); }
@@ -74,17 +74,17 @@ filechooser,
     scrollbar { @extend %dark_sidebar_scrollbar }
   }
 
-  &.maximized placessidebar.sidebar { background-color: opacify($dark_sidebar_bg, 1); }
+  &.maximized placessidebar.sidebar { background-color: opacify($sidebar_bg, 1); }
 }
 
 .nemo-window {
   .sidebar {
-    color: $dark_sidebar_fg;
-    background-color: $dark_sidebar_bg;
+    color: $sidebar_fg;
+    background-color: $sidebar_bg;
 
     .view, row {
       background-color: transparent;
-      color: $dark_sidebar_fg;
+      color: $sidebar_fg;
 
       &.cell:selected {
         background-color: $selected_bg_color;
@@ -92,9 +92,9 @@ filechooser,
       }
 
       &.expander {
-        color: mix($dark_sidebar_fg, $dark_sidebar_bg, 50%);
+        color: mix($sidebar_fg, $sidebar_bg, 50%);
 
-        &:hover { color: $dark_sidebar_fg; }
+        &:hover { color: $sidebar_fg; }
       }
     }
 
@@ -110,55 +110,55 @@ filechooser,
   > notebook > stack > widget > box,
   text,
   treeview {
-    color: $dark_sidebar_fg;
-    caret-color: $dark_sidebar_fg;
-    background-color: opacify($dark_sidebar_bg, 1);
+    color: $sidebar_fg;
+    caret-color: $sidebar_fg;
+    background-color: opacify($sidebar_bg, 1);
   }
 
   > box button {
-    &:not(:active):not(:checked) { color: $dark_sidebar_fg; }
+    &:not(:active):not(:checked) { color: $sidebar_fg; }
     &:hover:not(:active) { @extend %dark_sidebar_button:hover; }
   }
 
-  .frame { border-color: darken(opacify($dark_sidebar_bg, 1), 5%); }
+  .frame { border-color: darken(opacify($sidebar_bg, 1), 5%); }
 
   scrollbar { @extend %dark_sidebar_scrollbar; }
-  junction { background-color: darken($dark_sidebar_bg, 5%); }
+  junction { background-color: darken($sidebar_bg, 5%); }
 }
 
 filechooser {
 
   actionbar {
-    color: $dark_sidebar_fg;
-    background-color: $dark_sidebar_bg;
-    border-color: if($variant =='light', darken($dark_sidebar_bg, 7%), darken($dark_sidebar_bg, 15%));
+    color: $sidebar_fg;
+    background-color: $sidebar_bg;
+    border-color: if($variant =='light', darken($sidebar_bg, 7%), darken($sidebar_bg, 15%));
 
     button { @extend %dark_sidebar_button; }
     entry { @extend %dark_sidebar_entry; }
 
     @extend %osd_check_radio;
 
-    label, combobox { color: $dark_sidebar_fg; }
+    label, combobox { color: $sidebar_fg; }
   }
 }
 
 // Gedit
 .gedit-bottom-panel-paned { background-color: $base_color; }
 
-.gedit-side-panel-paned > separator { background-image: _solid($dark_sidebar_border); }
+.gedit-side-panel-paned > separator { background-image: _solid($sidebar_border); }
 .gedit-bottom-panel-paned > separator { background-image: _solid($borders_color); }
 
 .gedit-document-panel {
-  background-color: $dark_sidebar_bg;
+  background-color: $sidebar_bg;
 
-  .maximized & { background-color: opacify($dark_sidebar_bg, 1); }
+  .maximized & { background-color: opacify($sidebar_bg, 1); }
 
   row {
-    color: $dark_sidebar_fg;
-    background-color: transparentize($dark_sidebar_fg, 1);
+    color: $sidebar_fg;
+    background-color: transparentize($sidebar_fg, 1);
 
     &:hover {
-      background-color: transparentize($dark_sidebar_fg, 0.85);
+      background-color: transparentize($sidebar_fg, 0.85);
     }
     &:active {
       color: $selected_fg_color;
@@ -171,7 +171,7 @@ filechooser {
       background-color: $selected_bg_color;
     }
     &:hover:not(:selected) button:active {
-      color: $dark_sidebar_fg;
+      color: $sidebar_fg;
     }
   }
 }
@@ -193,16 +193,16 @@ filechooser {
 
 %dark_sidebar_scrollbar {
 
-  border-color: darken($dark_sidebar_bg, 5%);
+  border-color: darken($sidebar_bg, 5%);
 
   &.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: lighten($dark_sidebar_fg, 15%);
+    background-color: lighten($sidebar_fg, 15%);
     border: 1px solid transparentize(black, 0.7);
   }
   slider {
-    background-color: transparentize(lighten($dark_sidebar_fg, 15%), 0.3);
+    background-color: transparentize(lighten($sidebar_fg, 15%), 0.3);
 
-    &:hover { background-color: lighten($dark_sidebar_fg, 20%); }
+    &:hover { background-color: lighten($sidebar_fg, 20%); }
 
     &:hover:active { background-color: $selected_bg_color; }
 
@@ -211,6 +211,6 @@ filechooser {
     }
   }
   trough {
-    background-color: darken($dark_sidebar_bg, 5%);
+    background-color: darken($sidebar_bg, 5%);
   }
 }

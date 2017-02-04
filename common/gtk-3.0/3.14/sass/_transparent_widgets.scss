@@ -14,9 +14,9 @@ NemoWindow {
   GtkFileChooserDialog,
   NautilusWindow ,
   NemoWindow {
-    .sidebar { border-right: 1px solid $dark_sidebar_border; }
+    .sidebar { border-right: 1px solid $sidebar_border; }
 
-    .sidebar:dir(rtl) { border-left: 1px solid $dark_sidebar_border; }
+    .sidebar:dir(rtl) { border-left: 1px solid $sidebar_border; }
   }
 }
 
@@ -32,13 +32,13 @@ MarlinViewWindow {
   .source-list, .source-list.view, .source-list.view:prelight { background-color: transparent; }
 
   .sidebar, MarlinPlacesSidebar {
-    background-color: $dark_sidebar_bg;
+    background-color: $sidebar_bg;
 
     .view, .source-list.sidebar row {
       background-color: transparent;
-      color: $dark_sidebar_fg;
+      color: $sidebar_fg;
 
-      &.image { color: transparentize($dark_sidebar_fg, 0.3); }
+      &.image { color: transparentize($sidebar_fg, 0.3); }
 
       &.cell:selected {
         background-color: $selected_bg_color;
@@ -46,19 +46,19 @@ MarlinViewWindow {
       }
     }
 
-    &.frame { color: $dark_sidebar_fg; }
+    &.frame { color: $sidebar_fg; }
 
     .separator { color: transparent; }
 
     .scrollbar { @extend %dark_sidebar_scrollbar }
   }
-  &.maximized .sidebar { background-color: opacify($dark_sidebar_bg, 1); }
+  &.maximized .sidebar { background-color: opacify($sidebar_bg, 1); }
 }
 
 GtkFileChooserDialog .pane-separator,
 NautilusWindow .pane-separator,
 NemoWindow.background > GtkGrid > GtkPaned > .pane-separator,
-MarlinViewWindow.background > GtkBox > GtkPaned > .pane-separator {background-color: $dark_sidebar_border}
+MarlinViewWindow.background > GtkBox > GtkPaned > .pane-separator {background-color: $sidebar_border}
 
 // Fix Nautilus transparency issues
 NautilusWindow NautilusWindowSlot { background-color: $base_color; }
@@ -66,7 +66,7 @@ NautilusDesktopWindow NautilusWindowSlot { background-color: transparent; }
 
 GtkFileChooserDialog {
 
-  &.background.csd, &.background { background-color: $dark_sidebar_bg }
+  &.background.csd, &.background { background-color: $sidebar_bg }
   .sidebar { background-color: transparent }
 
   // Yeah, this is ugly, but prevents a transparent background in the image preview box
@@ -76,12 +76,12 @@ GtkFileChooserDialog {
   .dialog-action-box { background-color: $bg_color }
 
   .dialog-vbox > .frame {
-    color: $dark_sidebar_fg;
+    color: $sidebar_fg;
     border-color: transparent;
   }
   .action-bar.frame {
     background-color: transparent;
-    border-color: if($variant =='light', darken($dark_sidebar_bg, 5%), darken($dark_sidebar_bg, 10%));
+    border-color: if($variant =='light', darken($sidebar_bg, 5%), darken($sidebar_bg, 10%));
   }
 
   .action-bar.frame,
@@ -92,7 +92,7 @@ GtkFileChooserDialog {
 
     @extend %osd_check_radio;
 
-    GtkLabel, GtkComboBox { color: $dark_sidebar_fg; }
+    GtkLabel, GtkComboBox { color: $sidebar_fg; }
   }
 }
 
@@ -129,7 +129,7 @@ GeditWindow.background.csd > .titlebar {
 GeditWindow.background {
   &.csd { background-color: transparent; }
 
-  .gedit-side-panel-paned .pane-separator { background-color: $dark_sidebar_border; }
+  .gedit-side-panel-paned .pane-separator { background-color: $sidebar_border; }
   .gedit-bottom-panel-paned .pane-separator { background-color: $borders_color; }
 
   > .titlebar.default-decoration,
@@ -139,21 +139,21 @@ GeditWindow.background {
 .gedit-bottom-panel-paned { background-color: $base_color; }
 
 .gedit-document-panel {
-  background-color: $dark_sidebar_bg;
+  background-color: $sidebar_bg;
 
-  .maximized & { background-color: opacify($dark_sidebar_bg, 1); }
+  .maximized & { background-color: opacify($sidebar_bg, 1); }
 
-  .list-row { color: $dark_sidebar_fg; }
+  .list-row { color: $sidebar_fg; }
 
   .list-row {
-    background-color: transparentize($dark_sidebar_fg, 1);
-    border: solid transparentize($dark_sidebar_fg, 1);
+    background-color: transparentize($sidebar_fg, 1);
+    border: solid transparentize($sidebar_fg, 1);
     border-width: 3px 2px 3px 2px;
   }
   .list-row:hover {
-    border: solid transparentize($dark_sidebar_fg, 0.85);
+    border: solid transparentize($sidebar_fg, 0.85);
     border-width: 3px 2px 3px 2px;
-    background-color: transparentize($dark_sidebar_fg, 0.85);
+    background-color: transparentize($sidebar_fg, 0.85);
   }
   .list-row:active {
     color: $selected_fg_color;
@@ -170,14 +170,14 @@ GeditWindow.background {
     border-width: 3px 2px 3px 2px;
   }
   .prelight-row .button:active {
-    color: $dark_sidebar_fg;
+    color: $sidebar_fg;
   }
 }
 
 GeditFileBrowserWidget {
-  background-color: $dark_sidebar_bg;
+  background-color: $sidebar_bg;
 
-  .maximized & { background-color: opacify($dark_sidebar_bg, 1); }
+  .maximized & { background-color: opacify($sidebar_bg, 1); }
 
   .scrollbar { @extend %dark_sidebar_scrollbar }
 
@@ -189,20 +189,20 @@ GeditFileBrowserWidget {
 
   .horizontal {
     background-color: transparent;
-    border-color: darken($dark_sidebar_bg, 7%);
+    border-color: darken($sidebar_bg, 7%);
 
     .button { @extend %dark_sidebar_button; }
-    GtkComboBox { color: $dark_sidebar_fg; }
+    GtkComboBox { color: $sidebar_fg; }
   }
 }
 
 GeditWindow.background.csd GeditFileBrowserView.view {
 
   background-color: transparent;
-  color: $dark_sidebar_fg;
+  color: $sidebar_fg;
 
   &.expander {
-    color: $dark_sidebar_fg;
+    color: $sidebar_fg;
     &:hover { color: $selected_bg_color; }
   }
 }
@@ -229,9 +229,9 @@ GeditWindow.background.csd GeditFileBrowserView.view {
   &.slider {
     border-radius: 20px;
     border: 3px solid transparent;
-    background-color: transparentize(lighten($dark_sidebar_fg, 15%), 0.3);
+    background-color: transparentize(lighten($sidebar_fg, 15%), 0.3);
     &:hover {
-      background-color: lighten($dark_sidebar_fg, 20%);
+      background-color: lighten($sidebar_fg, 20%);
     }
     &:prelight:active {
       background-color: $selected_bg_color;
