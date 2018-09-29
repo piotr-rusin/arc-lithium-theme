@@ -1,6 +1,12 @@
+if !ENABLE_TRANSPARENCY
+themedir        = $(datadir)/themes/Arc-Lithium-solid
+themedarkerdir  = $(datadir)/themes/Arc-Lithium-Darker-solid
+themedarkdir    = $(datadir)/themes/Arc-Lithium-Dark-solid
+else
 themedir        = $(datadir)/themes/Arc-Lithium
 themedarkerdir  = $(datadir)/themes/Arc-Lithium-Darker
 themedarkdir    = $(datadir)/themes/Arc-Lithium-Dark
+endif
 
 ithemedir       = $(DESTDIR)$(themedir)
 ithemedarkerdir   = $(DESTDIR)$(themedarkerdir)
